@@ -8,6 +8,8 @@
 
 #import "ViewController.h"
 #import "GameControl.h"
+#define kPlayer1 @"Player 1"
+#define kPlayer2 @"Player 2"
 
 @interface ViewController ()
 
@@ -25,6 +27,7 @@
 @end
 
 @implementation ViewController
+
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -44,10 +47,10 @@
     self.currentGame = [[GameControl alloc] init];
     self.playerAnswer = [[NSMutableString alloc] init];
     self.mathQuestionLabel.text = [self.currentGame generateMathQuestion];
-    self.playerOneScoreLabel.text = [self.currentGame getPlayerScore:@"Player 1"];
-    self.playerTwoScoreLabel.text  = [self.currentGame getPlayerScore:@"Player 2"];
-    self.playerOneLivesLabel.text = [self.currentGame getPlayerLives:@"Player 1"];
-    self.playerTwoLivesLabel.text = [self.currentGame getPlayerLives:@"Player 2"];
+    self.playerOneScoreLabel.text = [self.currentGame getPlayerScore:kPlayer1];
+    self.playerTwoScoreLabel.text  = [self.currentGame getPlayerScore:kPlayer2];
+    self.playerOneLivesLabel.text = [self.currentGame getPlayerLives:kPlayer1];
+    self.playerTwoLivesLabel.text = [self.currentGame getPlayerLives:kPlayer2];
     self.isNegative = NO;
     
 }
@@ -70,10 +73,10 @@
     }
     
     // Update results
-    self.playerOneScoreLabel.text = [self.currentGame getPlayerScore:@"Player 1"];
-    self.playerTwoScoreLabel.text  = [self.currentGame getPlayerScore:@"Player 2"];
-    self.playerOneLivesLabel.text = [self.currentGame getPlayerLives:@"Player 1"];
-    self.playerTwoLivesLabel.text = [self.currentGame getPlayerLives:@"Player 2"];
+    self.playerOneScoreLabel.text = [self.currentGame getPlayerScore:kPlayer1];
+    self.playerTwoScoreLabel.text  = [self.currentGame getPlayerScore:kPlayer2];
+    self.playerOneLivesLabel.text = [self.currentGame getPlayerLives:kPlayer1];
+    self.playerTwoLivesLabel.text = [self.currentGame getPlayerLives:kPlayer2];
     
     // Ask to play again
     if([self.currentGame gameOver]) {

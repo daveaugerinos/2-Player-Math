@@ -93,13 +93,13 @@
 				A25EB37C1E52659200633918 /* ViewController.m */,
 				A25EB39A1E526C5200633918 /* Player.h */,
 				A25EB39B1E526C5200633918 /* Player.m */,
+				A25EB39D1E5270A800633918 /* GameControl.h */,
+				A25EB39E1E5270A800633918 /* GameControl.m */,
 				A25EB37E1E52659200633918 /* Main.storyboard */,
 				A25EB3811E52659200633918 /* Assets.xcassets */,
 				A25EB3831E52659200633918 /* LaunchScreen.storyboard */,
 				A25EB3861E52659200633918 /* Info.plist */,
 				A25EB3751E52659200633918 /* Supporting Files */,
-				A25EB39D1E5270A800633918 /* GameControl.h */,
-				A25EB39E1E5270A800633918 /* GameControl.m */,
 			);
 			path = "2-Player-Math";
 			sourceTree = "<group>";
@@ -424,6 +424,7 @@
 				A25EB3961E52659200633918 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A25EB3971E52659200633918 /* Build configuration list for PBXNativeTarget "2-Player-MathTests" */ = {
 			isa = XCConfigurationList;
@@ -432,6 +433,7 @@
 				A25EB3991E52659200633918 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
